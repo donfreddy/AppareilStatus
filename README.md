@@ -1,5 +1,7 @@
 # MonProjetAngular
 
+cette application web permet de verifier l'etat des appareils(allumer ou eteint). on peut egalement add des appareils dans la base de donnee DataBase.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
 ## Development server
