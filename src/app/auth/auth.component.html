@@ -1,0 +1,37 @@
+<h2>
+    Authentification
+</h2>
+
+<br>
+
+<form class="form-inline" *ngIf="!authStatus">
+    <label class="sr-only" for="inlineFormInputName2">Name</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Fullname">
+  
+    <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+    <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+            <div class="input-group-text">@</div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+    </div>
+</form>
+
+
+      
+    <div class="form-check mb-2 mr-sm-2" *ngIf="!authStatus">
+        <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+        <label class="form-check-label" for="inlineFormCheck">
+            Se souvenir de moi
+        </label>
+    </div>
+      
+    <button class="btn btn-success" *ngIf="!authStatus" (click)="onSignIn()">
+        Se connecter
+    </button>
+
+    <button class="btn btn-danger" *ngIf="authStatus" (click)="onSignOut()">
+        Se deconnecter
+    </button>
+
+
